@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+        làm việc với aray
+        1 to string
+        2 join
+        3 pop
+        4 push
+        5 shift
+        6 unshift
+        7 splicing
+        8 concat
+        9 slicing
+
+        */
+     var languages=[
+        'Javascript',
+        'Php',
+        'Ruby',
+     ];
+    // to string
+    console.log(languages.toString())
+    // join  array thanh string
+    console.log(languages.join())
+    // pop: xóa element cuối mảng và trả về phần tử đã xóa
+    console.log(languages.pop())
+    // push: thêm phần tử vào cuối mảng
+    console.log(languages.push('Phuong','Hieu'))
+    console.log(languages)
+    // shift: xóa đi phần tử đầu mảng và trả về phần tử đầu mảng
+    console.log(languages.shift())
+    console.log(languages)
+    // unshift: thêm phần tử đầu mảng
+    console.log(languages.unshift('PHuong dinh','Hieu cao'))
+    console.log(languages)
+    //  splicing xóa cắt chèn 1 phần tử trong element
+    //  xóa phần tử
+    languages.splice(1,0,'Php')
+    console.log(languages)
+    // concat: nối aray
+     var languages2=[
+        'Hieu',
+        'Phuong'
+     ] 
+      console.log(languages.concat(languages2))
+    //  slicing để cắt 1 vài element của mảng
+    console.log(languages.slice(1,5))
+    </script>
+</body>
+</html>

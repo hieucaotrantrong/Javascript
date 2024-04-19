@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <script>
+        /*
+         Làm việc với chuỗi
+        1 Length
+        2 find index
+        3 cut string
+        4 replace
+        5 convert to upper case
+        6 convert to lower case
+        7 trim
+        8 split
+        9 get a character by index
+        */
+    //    1 Length độ dài của chuỗi 
+        var myString='  Hieu Yeu Phuong nhieu lam'
+         console.log(myString.length)
+    //  2 find index
+         console.log(myString.indexOf('Phuong',15))
+    //  3 cut string  cắt chuỗi
+         console.log(myString.slice(4,6))
+    //  4 Replace  thường được gọi là thuộc tính ghì đè
+    console.log(myString.replace('Yeu','Thuong'))
+    // 5 convert to upper case chuyển đổi thành chữ hoa
+     console.log(myString.toUpperCase())
+    //6 convert to lower case chuyển đổi thành chữ thường
+         console.log(myString.toLowerCase)
+    // 7 trim  loạị bỏ kí tự khoảng trắng
+     console.log(myString.trim().length)
+    // 8 split cắt chuỗi thành 1 mảng
+     var languages='Java,php,javascript'
+           console.log(languages.split(','))
+    // 9 get a character by index
+     var myString2='Hieu Phuong'
+      console.log(myString2.charAt(9))
+     </script>
+</body>
+</html>
