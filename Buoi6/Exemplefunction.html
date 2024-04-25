@@ -20,10 +20,23 @@
         - đối tượng guments
         giới thiệu vòng for of
         */
+ //    tham số
+    /*
        function writeLog(massage){
         console.log(massage)
        }
        writeLog("Day la hacker hieu");
+    */
+//     giới thiệu về vòng for of
+        function writeLog(){
+             var myString='';
+             for(var param of arguments ){
+                console.log(param)
+                 myString+=`${param}-`
+             }
+             console.log(myString)
+            }
+        writeLog('Log1','Log2','Log3')
     </script>
 
 </body>

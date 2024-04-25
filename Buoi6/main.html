@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+         một số điều cần biết  về function
+         1 khai function đặt trùng tên?
+         2 khai báo tên biến trong hàm
+         3 định nghĩa hàm trong hàm
+
+        */
+    //     khai báo tên biến trong hàm
+    /*
+            function showMessage(){
+                var fullName="Hieu cao"
+                console.log(fullName)
+            }
+            showMessage();
+            */
+        function showMessage(){
+            function showMessage2(){
+                console.log('Message 2');
+
+            }
+            showMessage2()
+        }
+         showMessage();
+        
+    </script>
+</body>
+</html>

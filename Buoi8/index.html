@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    var myInfo={
+        name:'Cao hieu',
+        age:18,
+        address: "Da nang,vn",
+        getName: function(){
+            return this.name;
+        }
+
+    }       
+    //  Thêm 1 cặp key vào object đã được tạo
+     myInfo.email='caohieu241210@gmail.com'
+    //   xóa 1 cặp key and value
+    //  Function--> Phương thức // method
+    // Pther-->là thuộc tính // propety
+     delete myInfo.address
+     console.log( typeof myInfo.getName
+    ());
+    </script>
+</body>
+</html>
