@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //  Object constructor--> Xây dựng đối tượng
+        function User(firstName,lastname,avatar){
+             this.firstName=firstName;
+             this.lastname=lastname;
+             this.avatar=avatar;
+             this.getName=function(){   
+            return`${this.firstName}${this.lastname}`
+         }
+        }
+    //  object protype
+    User.prototype,className="Phuong hieu"
+        
+        
+    var author= new User('Hieu','Cao',' Avatar');
+    var user= new User('Phuong','Dinh','Avatar');
+    author.title='Cao Hieu yeu dinh phuong rat nhieu'
+    user.comment='Dinh phuong yeu hieu nhieu'
+    console.log(author.getName());
+    console.log(user.getName());
+    </script>
+</body>
+</html>
