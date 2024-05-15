@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+         for- lặp với điều kiện đúng
+         for/in- lặp qua key của đối tượng
+         for/of lặp qua value của đối tượng
+         while - lặp điều kiện đúng
+         do/while- lặp ít nhất 1 lần sau đó lặp khi điều kiện đúng
+
+        */
+        for( var i=1;i<=1000;i++){
+            console.log(i);
+        }
+          var myArray=[
+            'JavaScript',
+            'PHP',
+            'java',
+            'Dart'
+          ]
+    
+         var arrayLEngth= myArray.length;
+         for( var i=0;i<arrayLEngth;i++){
+            console.log(myArray[i])
+         }
+        //  for in
+          var myInfo={
+            name:'Cao Hieu',
+            age:20,
+            address:'Da Nang,VietNam'
+          }
+           for( var key in myInfo){
+            console.log(myInfo[key])
+           }
+        //  for/of loop
+        var myInfo=[
+            'Cao Hieu',
+            'java',
+            'Da Nang,VietNam'
+          ]
+           for( var value of myInfo){
+            console.log(value);
+           }
+            
+    </script>
+</body>
+</html>
