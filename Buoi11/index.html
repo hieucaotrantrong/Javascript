@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+   /*
+    Array methods:
+     forEach() dung de duyet qua phan tu cua mang
+     every() kiem tra cac phan tu cua mang phai thoa man 1 dieu kien nao do
+     some() kiem tra cac  phan tu chi can 1 dk dung se tra va true
+     find() dung de tim kiem nhung chi tra ve 1 phan tu
+
+     filter() dung de tim kiem nhung tra ve nhieu phan tu
+     map()  
+     reduce()
+   */
+     var courses=[
+    {
+        id:1,
+        name:"Lap trinh PhP",
+        coin:1
+     },
+     {
+        id:2,
+        name:"Lap trinh PhP",
+        coin:1
+     },
+     {
+        id:3,
+        name:"Lap trinh Java",
+        coin:1
+     },
+     {
+        id:4,
+        name:"JavaScript",
+        coin:0
+     },
+     {
+        id:5,
+        name:"Lap trinh back-end",
+        coin:0
+     }];
+   //   
+     var isFree= courses.find(function( course,index){
+   
+         return course.name==='JavaScript';
+      });
+       console.log(isFree)
+</script>
+</body>
+</html>
