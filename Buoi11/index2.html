@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--  pHuong thuc reduce trong js -->
+    <script>
+          var courses=[
+    {
+        id:1,
+        name:"Lap trinh PhP",
+        coin:1
+     },
+     {
+        id:2,
+        name:"Lap trinh PhP",
+        coin:18
+     },
+     {
+        id:3,
+        name:"Lap trinh Java",
+        coin:1
+     },
+     {
+        id:4,
+        name:"JavaScript",
+        coin:28
+     },
+     {
+        id:5,
+        name:"Lap trinh back-end",
+        coin:17
+     },
+     {
+        id:6,
+        name:"JavaScript",
+        coin:10
+     },];
+   // Bien luu tru
+   //  Thuc hien viec luu tru
+
+    var i=0;   
+     function coinHandler(accmulator,currentValue,currentIndex,originArray){
+            return total;
+     }
+    var totalCoin= courses.reduce(coinHandler,0);
+   //  var totalCoin=0;
+   //   for (const course of courses) {
+   //        totalCoin+=course.coin;
+   //   }
+      console.log(totalCoin);
+    </script>
+</body>
+</html>

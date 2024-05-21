@@ -13,7 +13,6 @@
      every() kiem tra cac phan tu cua mang phai thoa man 1 dieu kien nao do
      some() kiem tra cac  phan tu chi can 1 dk dung se tra va true
      find() dung de tim kiem nhung chi tra ve 1 phan tu
-
      filter() dung de tim kiem nhung tra ve nhieu phan tu
      map()  
      reduce()
@@ -43,13 +42,31 @@
         id:5,
         name:"Lap trinh back-end",
         coin:0
-     }];
+     },
+     {
+        id:6,
+        name:"JavaScript",
+        coin:0
+     },];
    //   
-     var isFree= courses.find(function( course,index){
+   //   var isFree= courses.filter(function( course,index){
    
-         return course.name==='JavaScript';
-      });
-       console.log(isFree)
+   //       return course.name==='JavaScript';
+   //    });
+   //     console.log(isFree)
+    function courseHandler(course,index){
+      return {
+          id: course.id,
+            name:` Khoa hoc: ${course.name}`,
+            coin: course.coin,
+             coinText:`Gia: ${course.coin}`,
+             index: index,
+      };
+    }
+      var newCourses= courses.map(courseHandler);
+         //  console.log(courseHandler);
+           console.log( newCourses);
+   
 </script>
 </body>
 </html>
